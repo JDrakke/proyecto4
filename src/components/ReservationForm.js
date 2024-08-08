@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { db } from './firebase'; // Asegúrate de que la configuración de Firebase está correcta
+import { db } from '../firebase'; 
 import { collection, addDoc } from 'firebase/firestore';
 
 const Reservation = () => {
@@ -11,6 +11,8 @@ const Reservation = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log('Enviando datos:', { name, email, date, time });
+    
     try {
       await addDoc(collection(db, 'reservations'), {
         name,
@@ -18,6 +20,7 @@ const Reservation = () => {
         date,
         time
       });
+      console.log('Reserva exitosa');
       setMessage('¡Reserva exitosa!');
       setName('');
       setEmail('');
@@ -28,6 +31,7 @@ const Reservation = () => {
       setMessage('Error al realizar la reserva. Por favor, intente de nuevo.');
     }
   };
+  
 
   return (
     <section>
