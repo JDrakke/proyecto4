@@ -1,52 +1,79 @@
 import React, { useState } from 'react';
+import { db } from './firebase'; // Asegúrate de que la configuración de Firebase está correcta
 import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../firebaseConfig';
 
-const ReservationForm = () => {
+const Reservation = () => {
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
-  const [guests, setGuests] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await addDoc(collection(db, 'reservations'), {
         name,
+        email,
         date,
-        time,
-        guests
+        time
       });
-      alert('Reservation successful!');
+      setMessage('¡Reserva exitosa!');
+      setName('');
+      setEmail('');
+      setDate('');
+      setTime('');
     } catch (error) {
-      console.error('Error adding document: ', error);
+      console.error('Error añadiendo la reserva: ', error);
+      setMessage('Error al realizar la reserva. Por favor, intente de nuevo.');
     }
   };
 
   return (
     <section>
-      <h2>Reserve a Table</h2>
+      <h2>Hacer una Reserva</h2>
       <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
-        </label>
-        <label>
-          Date:
-          <input type="date" value={date} onChange={(e) => setDate(e.target.value)} required />
-        </label>
-        <label>
-          Time:
-          <input type="time" value={time} onChange={(e) => setTime(e.target.value)} required />
-        </label>
-        <label>
-          Number of Guests:
-          <input type="number" value={guests} onChange={(e) => setGuests(e.target.value)} required />
-        </label>
-        <button type="submit">Submit</button>
+        <label htmlFor="name">Nombre:</label>
+        <input
+          type="text"
+          id="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+
+        <label htmlFor="date">Fecha:</label>
+        <input
+          type="date"
+          id="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          required
+        />
+
+        <label htmlFor="time">Hora:</label>
+        <input
+          type="time"
+          id="time"
+          value={time}
+          onChange={(e) => setTime(e.target.value)}
+          required
+        />
+
+        <button type="submit">Reservar</button>
       </form>
+      {message && <p>{message}</p>}
     </section>
   );
 };
 
-export default ReservationForm;
+export default Reservation;
