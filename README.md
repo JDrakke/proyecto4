@@ -1,74 +1,17 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+Descripción del Proyecto: Restaurant App
+Restaurant App es una aplicación web moderna y atractiva desarrollada para proporcionar a los clientes una experiencia culinaria digital completa. La aplicación ofrece una forma fácil y conveniente para que los usuarios exploren el menú del restaurante, realicen reservas en línea y obtengan información de contacto. Con un diseño profesional y una interfaz intuitiva, Restaurant App busca mejorar la experiencia del usuario y optimizar la gestión del restaurante.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Funcionalidades Clave
+Página de Inicio: Una página de bienvenida impactante que presenta el restaurante de manera cálida y profesional. El diseño incluye un fondo atractivo y un mensaje de bienvenida que destaca la experiencia culinaria ofrecida.
+Menú: Una sección dedicada al menú del restaurante que muestra los platos disponibles con descripciones detalladas y precios. El diseño está optimizado para ser visualmente atractivo y fácil de navegar.
+Reservas: Un formulario de reservas en línea que permite a los clientes solicitar una mesa de manera rápida y sencilla. La aplicación proporciona una confirmación automática de la reserva y asegura que la información del cliente sea gestionada de manera efectiva.
+Contacto: Información de contacto del restaurante, incluyendo correo electrónico, número de teléfono y dirección física. Esta sección está diseñada para facilitar la comunicación con los clientes y resolver cualquier consulta o solicitud.
+Tecnologías Utilizadas
+React: Utilizado para construir una interfaz de usuario dinámica y responsive.
+Firebase: Empleado para gestionar el almacenamiento de datos y las reservas.
+CSS: Para estilizar la aplicación y garantizar un diseño profesional y consistente.
+Enlace a la Aplicación
+La aplicación está disponible en línea y puede ser visitada en: Restaurant App.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# proyecto4
->>>>>>> 07bed90c654db43c56761940be363ca990581582
+Objetivo del Proyecto
+Restaurant App tiene como objetivo ofrecer una solución digital que facilite la interacción entre los clientes y el restaurante. A través de una interfaz amigable y funcionalidades clave como la visualización del menú y la gestión de reservas, el proyecto busca mejorar la eficiencia operativa del restaurante y proporcionar una experiencia satisfactoria para los usuarios.
